@@ -16,8 +16,23 @@ using namespace std;
     pointer.
     7# Write a C++ program to use this pointer and return the pointer reference.
 */
-
+void week7A1(){
+    int count =0;
+    string mystr;
+    cin.ignore();
+    getline(cin,mystr);
+    char *ptr;
+    ptr = &mystr[0];
+    while(*ptr != '\0'){
+        char c =tolower(*ptr);
+        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+            count++;
+        }
+        ptr++;
+    }
+    cout<<"Vowels in string: "<<count;
+}
 int main()
 {
-    
+    week7A1();
 }
