@@ -19,7 +19,6 @@ using namespace std;
 void week7A1(){
     int count =0;
     string mystr;
-    cin.ignore();
     getline(cin,mystr);
     char *ptr;
     ptr = &mystr[0];
