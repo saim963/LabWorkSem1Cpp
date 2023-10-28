@@ -8,7 +8,7 @@ class MyClass{
     MyClass(int*p){
         this->p=p;
     }
-    int*getPtr(){
+    int* getPtr(){
         return this->p;
     }
 };
