@@ -1,3 +1,4 @@
+//Develop a C++ program to find the greatest of two numbers using this pointer which returns the member variable.
 #include <bits/stdc++.h>
 using namespace std;
 
