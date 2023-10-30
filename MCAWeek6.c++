@@ -22,7 +22,6 @@ void week6A2(){
     *ptr1 = *ptr2;
     *ptr2 = temp;
     cout <<"The numbers after swapping: "<<*ptr1<<" "<<*ptr2;
-
 }
 void week6A3(){
     //print address of a variable
@@ -31,7 +30,6 @@ void week6A3(){
     cin>>x;
     ptr=&x;
     cout<<x<<" is stored at the address: "<<ptr;
-
 }
 void week6A4(){
     int *ptr,n;
@@ -40,7 +38,6 @@ void week6A4(){
     ptr=&n;
     cout<<"Incremented value: "<<++*ptr<<endl;
     cout<<"Decremented value: "<<----*ptr;
-
 }
 void week6A5(){
     //print string using pointers
@@ -119,6 +116,27 @@ void week6A8(){
     cout<<"sum of all elements of array: "<<sum;
 }
 //9th is same as 7 
+void week6A10(){
+    // reverse the array using pointers
+    cout << "Enter any string: ";
+    string mystr;
+    cin.ignore(); // Clear any newline characters from previous inputs
+    getline(cin,mystr);
+    int length = mystr.length();
+    char *start,*end;
+    start = &mystr[0]; // Pointer to the beginning of the string
+    end = &mystr[length-1]; // Pointer to the end of the string
+
+    // Reverse the string by swapping characters using pointers
+    while (start < end) {
+        char temp = *start;
+        *start = *end;
+        *end = temp;
+        start++;
+        end--;
+    }
+    cout << "Reversed string: " << mystr << endl;
+}
 void week6(){
     int n;
     cout << "Enter question number: ";
@@ -151,6 +169,9 @@ void week6(){
         break;
     case 9:
         cout<<"Same as question 7, same question!!";
+        break;
+    case 10:
+        week6A10();
         break;
     default:
         cout << "Invalid question number. ";

@@ -1,3 +1,7 @@
+/*Write a C++ program to create three objects for a class named pntr_obj with data
+    members such as roll_no & name. Create a member function set_data() for setting the
+    data values and print() member function to print which object has invoked it using the
+    ‘this’ pointer.*/
 #include <bits/stdc++.h>
 using namespace std;
 

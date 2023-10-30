@@ -1,32 +1,34 @@
+/*Write a C++ program to implement flight class with data member as flight_no., source
+    destination and fare. Write a member function to display the flight information using this
+    pointer.*/
 #include <bits/stdc++.h>
 using namespace std;
-
-class Flight {
-private:
+class Flight{
+    private:
     int flight_no;
-    string source;
-    string destination;
-    double fare;
+    string source, destination;
+    int fare;
 
-public:
-    Flight(int flightNumber, const string& src, const string& dest, double flightFare)
-        : flight_no(flightNumber), source(src), destination(dest), fare(flightFare) {}
+    public:
+    void getData(int flight_no, string source, string destination, int fare){
+        this->flight_no = flight_no;
+        this->source = source;
+        this->destination = destination;
+        this->fare = fare;
+    }
 
-    void displayFlightInfo() {
-        cout << "Flight Information:" << endl;
-        cout << "Flight Number: " << this->flight_no << endl;
-        cout << "Source: " << this->source << endl;
-        cout << "Destination: " << this->destination << endl;
-        cout << "Fare: $" << this->fare << endl;
+    void printData(){
+        cout<<"Flight No.: "<<this->flight_no<<endl;
+        cout<<"Source: "<<this->source<<endl;
+        cout<<"Destiantion: "<<this->destination<<endl;
+        cout<<"Fare: "<<this->fare<<endl;
     }
 };
 
-int main() {
-    // Create a Flight object and set its data
-    Flight flight1(101, "New York", "Los Angeles", 350.50);
-
-    // Display the flight information using the member function
-    flight1.displayFlightInfo();
-
-    return 0;
+int main(){
+    Flight obj1,obj2;
+    obj1.getData(6001,"Delhi","Chennai",2500);
+    obj1.printData();
+    obj2.getData(6002,"Chennai","New Delhi",2500);
+    obj2.printData();
 }

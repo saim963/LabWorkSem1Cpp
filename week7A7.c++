@@ -1,39 +1,20 @@
-#include <iostream>
+/*Write a C++ program to use this pointer and return the pointer reference.*/
+#include<bits/stdc++.h>
 using namespace std;
-
-class Sample {
-private:
-    int data;
-
-public:
-    Sample(int value) : data(value) {}
-
-    // Member function to return a reference to the current object
-    Sample& returnThis() {
-        return *this;
+//reference of this pointer
+class MyClass{
+    public:
+    int*p;
+    //constructor MyClass
+    MyClass(int*p){
+        this->p=p;
     }
-
-    // Member function to get a modifiable reference to data
-    int& getData() {
-        return data;
+    int* getPtr(){
+        return this->p;
     }
 };
-
-int main() {
-    Sample obj(42);
-
-    // Using the returnThis() member function to get a reference to the current object
-    Sample& ref = obj.returnThis();
-
-    cout << "Original object's data: " << obj.getData() << endl;
-    cout << "Referenced object's data: " << ref.getData() << endl;
-
-    // Modify the data through the reference
-    ref.getData() = 99;
-
-    // Verify that the data is modified in the original object as well
-    cout << "Original object's data after modification: " << obj.getData() << endl;
-    cout << "Referenced object's data after modification: " << ref.getData() << endl;
-
-    return 0;
+int main(){
+    int*p;
+    MyClass obj(p);
+    cout<<obj.getPtr()<<endl;
 }

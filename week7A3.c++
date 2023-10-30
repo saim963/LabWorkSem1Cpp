@@ -1,3 +1,4 @@
+/*Write a C++ program using pointers to compute the sum, mean and standard deviation of all elements stored in an array of n real numbers.*/
 #include <bits/stdc++.h>
 using namespace std;
 int main(){

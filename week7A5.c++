@@ -1,38 +1,28 @@
-//Develop a C++ program to find the greatest of two numbers using this pointer which returns the member variable.
-#include <bits/stdc++.h>
+/*Develop a C++ program to find the greatest of two numbers using this pointer which
+    returns the member variable.*/
+#include<bits/stdc++.h>
 using namespace std;
 
-class GreatestNumberFinder {
-private:
-    int num1;
-    int num2;
+class Number{
+    private:
+    int n1;
+    int n2;
 
-public:
-    GreatestNumberFinder(int a, int b) : num1(a), num2(b) {}
-
-    int compareAndReturnGreatest() {
-        if (this->num1 > this->num2) {
-            return this->num1;
-        } else {
-            return this->num2;
-        }
+    public:
+    void getData(int n1,int n2){
+        this->n1=n1;
+        this->n2=n2;
     }
+
+    int checkGreatest(){
+        return((this->n1 > this->n2)?this->n1:this->n2);
+    }    
 };
-
-int main() {
-    int a, b;
-
-    cout << "Enter the first number: ";
-    cin >> a;
-
-    cout << "Enter the second number: ";
-    cin >> b;
-
-    GreatestNumberFinder finder(a, b);
-
-    int greatest = finder.compareAndReturnGreatest();
-
-    cout << "The greatest number is: " << greatest << endl;
-
-    return 0;
+int main(){
+    int a,b;
+    Number n;
+    cout<<"Enter the numbers:\n";
+    cin>>a>>b;
+    n.getData(a,b);
+    cout<<"Greatest number is: "<<n.checkGreatest();    
 }
