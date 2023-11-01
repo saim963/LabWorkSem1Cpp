@@ -3,7 +3,7 @@ using namespace std;
 void fibonacci(){
     //fibonaccia series sum of previous two
     int first,second,n;
-    cout<<"nter no of terms: ";
+    cout<<"Enter no of terms: ";
     cin>>n;
     cout<<"Enter first element of the series: ";
     cin>>first;
