@@ -8,7 +8,7 @@ int main(){
     std::cout<<"Enter a word to count in string: ";
     std::getline(std::cin,searchStr);
 
-    std::stringstream ss(mainStr);
+    // std::stringstream ss(mainStr); there is something named stringstream use that to solve this problem
 
     size_t found = mainStr.find(searchStr);
     while (found != std::string::npos) {
