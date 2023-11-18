@@ -1,5 +1,6 @@
 #include<iostream>
 
+//tower of hanoi problem using recursion
 void pm(int start,int end);
 void hanoi(int n,int start,int end){
     if(n==1){
