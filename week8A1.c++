@@ -28,7 +28,7 @@ int main()
     cout << "Choose an operation:" << endl;
     cout << "1. Insert a substring" << endl;
     cout << "2. Delete characters" << endl;
-    cout << "Enter you choice: ";
+    cout << "Enter your choice: ";
     cin >> choice;
 
     switch (choice)
