@@ -16,8 +16,8 @@ struct DOB {
 int main() {
     DOB myInfo;
     myInfo.name = "saim";
-    myInfo.birthdate.day = 25;
-    myInfo.birthdate.month = 02;
+    myInfo.birthdate.day = 14;
+    myInfo.birthdate.month = 07;
     myInfo.birthdate.year = 2001;
 
     // Displaying name and date of birth
