@@ -1,4 +1,4 @@
-// Write a C++ Program for Length of String Using Pointer.
+//Write a C++ Program for Length of String Using Pointer.
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
