@@ -5,6 +5,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// the data here is hard coded
 class pntr_obj {
 private:
     int roll_no;
