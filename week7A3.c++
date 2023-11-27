@@ -22,6 +22,7 @@ int main(){
     mean = sum / n;
     // Calculate the standard deviation
     for (int i = 0; i < n; i++) {
+        // standard deviation formula used here
         stdDev += pow(arr[i] - mean, 2);
     }
     stdDev = sqrt(stdDev / n);
