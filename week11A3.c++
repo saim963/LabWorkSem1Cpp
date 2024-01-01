@@ -53,3 +53,4 @@ int main()
     cout << "Sum of alternate digits at odd positions: " << alternateSum2 << endl;
 
     return 0;
+}
