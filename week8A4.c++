@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include <sstream>
-// using namespace std;
+#include <bits/stdc++.h>
 int main()
 {
     int count = 0;
