@@ -15,10 +15,10 @@ struct DOB {
 
 int main() {
     DOB myInfo;
-    myInfo.name = "saim";
+    myInfo.name = "Samuel";
     myInfo.birthdate.day = 14;
     myInfo.birthdate.month = 07;
-    myInfo.birthdate.year = 2001;
+    myInfo.birthdate.year = 2000;
 
     // Displaying name and date of birth
     cout << "Name: " << myInfo.name << endl;
