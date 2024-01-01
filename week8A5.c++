@@ -17,6 +17,4 @@ int main(){
         std::cout<<"1";
     }
     // std::cout<<"Postiton to find:"<<pos;
-    
-
 }
