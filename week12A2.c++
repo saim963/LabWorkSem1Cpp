@@ -32,3 +32,4 @@ int main()
     calc.performOperations();
 
     return 0;
+}
