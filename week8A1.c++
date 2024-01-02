@@ -52,7 +52,5 @@ int main()
         cout<<"Final string: "<<mainString;
         break;
     }
-
-    /**/
     return 0;
 }
